@@ -2,7 +2,7 @@ import {Router} from 'express'
 
 import persons from './persons'
 
-const router = router()
+const router = Router()
 
 router.get('/api', (req, res) => {
     res.send({ msg: 'Inside API Endpoints' })

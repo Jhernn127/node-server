@@ -1,4 +1,4 @@
-import '/utils/config'
+import'./utils/config' 
 
 import express from 'express'
 import morgan from 'morgan'
@@ -25,7 +25,7 @@ app.use(cors({ origin: process.env.ORIGIN }))
 app.use(helmet())
 app.use(bodyParser.json())
 
-app.use('/', router)
+app.use("/", router)
 
 app.use(notFound)
 app.use(errorHandler)

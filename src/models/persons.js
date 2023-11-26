@@ -10,7 +10,7 @@ export const getPerson = (id) => {
 
 export const createPerson = (person) => {
     const id = uuid()
-    persons.push({id, ...person} items[0]: )
+    persons.push({id, ...person} [0] )
     return getPerson(id)
 }
 
