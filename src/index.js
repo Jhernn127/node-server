@@ -1,4 +1,4 @@
-import'./utils/config' 
+import './utils/config' 
 
 import express from 'express'
 import morgan from 'morgan'
