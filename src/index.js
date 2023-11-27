@@ -1,4 +1,4 @@
-//comment
+
 import './utils/config' 
 
 import express from 'express'
