@@ -1,11 +1,9 @@
-import  db from '../utils/db'
-
-export const getDepartments = async () => db.Department.findMany()
-
-export const getDepartment = async (id) =>
-    db.Department.findUnique({ where: { DepartmentId: id } })
-
-export const addDepartment = async (name, conmpanyId ) =>
-    db.Department.create({data: { name, conmpanyId } })
-
+import db from '../utils/db'
  
+export const getDepartments = async () => db.department.findMany()
+ 
+export const getDepartment = async (id) =>
+  db.department.findUnique({ where: { departmentId: id } })
+ 
+export const addDepartment = async (name, companyId) =>
+  db.department.create({ data: { name, companyId } })
