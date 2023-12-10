@@ -6,7 +6,7 @@ import { addDepartment }  from '../../models/departments'
 const router = Router()
 
 router.get('/', async (req, res) => {
-    const companies = await getCompanies
+    const companies = await getCompanies()
     res.send(companies)
 })
 
